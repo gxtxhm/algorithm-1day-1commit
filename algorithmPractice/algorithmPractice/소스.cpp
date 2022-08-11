@@ -115,5 +115,7 @@ int main()
 
     for (int i = 0; i < c.size(); i++)
         printf("%d ", c[i]);
+
+    //e´Ù½ÃÄ¿¹Ô
 	return 0;
 }
