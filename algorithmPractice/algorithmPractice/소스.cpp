@@ -5,70 +5,115 @@
 using namespace std;
 
 
-// 주어진 문자열 s에서 문자로된 숫자(ex: seven)를 구분하기 위해서
-// string, int 데이터 구조를 만들었다.
-// 1부터 9까지의 스펠링은 앞 2글자로 구분이 가능하다.
-// 따라서 앞 두글자를 string에 저장하고 int에는 스펠링 수를 저장하였다.
+struct info
+{
+    string user_id;
+    vector<string>report_info;
 
-int solution(string s) {
-    vector<pair<string, int>> index;
+};
 
-    // 구분하기위한 인덱스표를 생성한다. 
-    // ex) 뜻 : ze => zero, 4 -> zero의 스펠링 수
-    index.push_back(make_pair("ze", 4));
-    index.push_back(make_pair("on", 3));
-    index.push_back(make_pair("tw", 3));
-    index.push_back(make_pair("th", 5));
-    index.push_back(make_pair("fo", 4));
-    index.push_back(make_pair("fi", 4));
-    index.push_back(make_pair("si", 3));
-    index.push_back(make_pair("se", 5));
-    index.push_back(make_pair("ei", 5));
-    index.push_back(make_pair("ni", 4));
+vector<int> solution(vector<string> id_list, vector<string> report, int k) {
+    vector<int> answer(id_list.size());
     
-    // 리턴할 변수
-    int answer = 0;
 
-    // i가 매개변수 문자열인 s의 파라미터 변수이다.
-    int i = 0;
-    int sLen = s.length();
-    
-    while (i<sLen)
+    vector<info>Info;
+    vector<pair<string, int>>cntUserReported;
+    //먼저 info에 유저 리스트 등록
+    for (int i = 0; i < id_list.size(); i++)
     {
-        if (s[i]>=48&&s[i]<=57)//숫자이면 - (아스키코드)
+        answer[i] = 0;
+        struct info in;
+        in.user_id = id_list[i];
+        Info.push_back(in);
+        cntUserReported.push_back(make_pair(id_list[i], 0));
+    }
+    //리포트 돌면서 신고당한 횟수 카운트
+    for (int i = 0; i < report.size(); i++)
+    {
+        int index = report[i].rfind(' ');
+        string user = report[i].substr(0, index);
+        string repo = report[i].substr(index + 1);
+
+        for (int j = 0; j < Info.size(); j++)
         {
-            answer *= 10;
-            answer = answer+(s[i] - 48);//문자 '0~9' 를 숫자 '0~9'로 변환
-            //숫자는 1칸을 차지하기 떄문에 +1을 한다.
-            i++;
-        }
-        else//문자면
-        {
-            for (int j = 0;j < 10; j++)
+            bool check = false;
+            //이미uesr가 repo를 신고했었는지 확인
+            if (Info[j].user_id == user)//해당 유저를 찾고
             {
-                //앞 두개의 스펠링이 일치하면
-                if (s[i] == index[j].first[0]&& s[i+1] == index[j].first[1])
+                for (int k = 0; k < Info[j].report_info.size(); k++)
                 {
-                    //스펠링 수만큼 파라미터를 이동시킨다.
-                    i += index[j].second;
-                    answer = answer * 10;
-                    answer = answer + j;
-                    break;
+                    // 이미 신고했었다면, 카운트 x
+                    if (Info[j].report_info[k] == repo)
+                    {
+                        check = true;
+                        break;
+                    }
+                }
+                if (check)break;
+                else
+                {
+                    //신고 처음이라면 카운트 1번하기
+                    Info[j].report_info.push_back(repo);
+                    for (int n = 0; n < cntUserReported.size(); n++)
+                    {
+                        if(cntUserReported[n].first==repo)cntUserReported[n].second++;
+                    }
+                    
+                }
+            }
+            
+        }
+    }
+
+    //마지막으로 정지된 유저를 파악하며 신고했던 유저가 받을 메일개수 파악하기
+
+    //정지된 유저 파악하기
+    vector<string>result;
+    for (int i = 0; i < cntUserReported.size(); i++)
+    {
+        //해당유저가 k번이상 신고되었다면
+        if (cntUserReported[i].second >= k)
+        {
+            result.push_back(cntUserReported[i].first);
+        }
+    }
+    // 정지당한 유저를 신고했던 유저에게 메일보내기
+    
+    for (int j = 0; j < result.size(); j++)
+    {
+        for (int i = 0; i < Info.size(); i++)
+        {
+            for (int k = 0; k < Info[i].report_info.size(); k++)
+            {
+                if (result[j] == Info[i].report_info[k])
+                {
+                    answer[i]++; break;
                 }
             }
         }
     }
-    
-    
     return answer;
 }
 
 
 int main()
 {
-    string s = "1one4five";
-	printf("%d", solution(s));
+    vector<string> a;
+    a.push_back("muzi");
+    a.push_back("frodo");
+    a.push_back("apeach");
+    a.push_back("neo");
 
+    vector<string> b;
+    b.push_back("muzi frodo");
+    b.push_back("apeach frodo");
+    b.push_back("frodo neo");
+    b.push_back("muzi neo");
+    b.push_back("apeach muzi");
 
+    vector<int> c = solution(a, b, 2);
+
+    for (int i = 0; i < c.size(); i++)
+        printf("%d ", c[i]);
 	return 0;
 }
