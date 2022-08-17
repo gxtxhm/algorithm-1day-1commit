@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="모의고사.cpp" />
     <ClCompile Include="소스.cpp" />
     <ClCompile Include="크레인인형뽑기.cpp" />
   </ItemGroup>
