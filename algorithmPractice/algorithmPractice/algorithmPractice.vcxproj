@@ -127,8 +127,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="같은_숫자는_싫어.cpp" />
     <ClCompile Include="모의고사.cpp" />
+    <ClCompile Include="성격유형검사하기.cpp" />
     <ClCompile Include="소스.cpp" />
+    <ClCompile Include="k번째수.cpp" />
     <ClCompile Include="크레인인형뽑기.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
