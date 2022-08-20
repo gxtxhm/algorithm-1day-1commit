@@ -4,6 +4,8 @@
 #include<cstdio>
 using namespace std;
 
+//contirbution에 적용이 안돼서 깃 등록 이메일을 변경하였다.
+
 vector<int> solution(vector<int> array, vector<vector<int>> commands) {
     vector<int> answer;
 
