@@ -33,5 +33,11 @@
     <ClCompile Include="k번째수.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="음양더하기.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="로또6in45.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
