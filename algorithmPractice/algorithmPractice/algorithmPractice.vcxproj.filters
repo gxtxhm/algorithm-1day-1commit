@@ -39,5 +39,11 @@
     <ClCompile Include="로또6in45.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="가운데글자가져오기.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="제일작은수제거하기.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
