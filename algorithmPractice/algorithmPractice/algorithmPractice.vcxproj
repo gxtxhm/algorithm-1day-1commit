@@ -135,6 +135,7 @@
     <ClCompile Include="성격유형검사하기.cpp" />
     <ClCompile Include="소스.cpp" />
     <ClCompile Include="k번째수.cpp" />
+    <ClCompile Include="신규아이디추천.cpp" />
     <ClCompile Include="없는숫자더하기.cpp" />
     <ClCompile Include="음양더하기.cpp" />
     <ClCompile Include="제일작은수제거하기.cpp" />
