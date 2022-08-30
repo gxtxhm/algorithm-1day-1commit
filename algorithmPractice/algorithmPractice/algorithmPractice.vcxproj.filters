@@ -66,5 +66,11 @@
     <ClCompile Include="실패율.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="정수내림차순.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="부족한금액계산하기.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
