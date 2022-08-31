@@ -127,6 +127,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="[1차]다트게임.cpp" />
+    <ClCompile Include="[1차]비밀지도cpp.cpp" />
     <ClCompile Include="가운데글자가져오기.cpp" />
     <ClCompile Include="같은_숫자는_싫어.cpp" />
     <ClCompile Include="나누어떨어지는숫자배열.cpp" />
