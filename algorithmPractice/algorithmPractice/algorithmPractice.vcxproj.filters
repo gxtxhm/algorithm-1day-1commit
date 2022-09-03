@@ -81,5 +81,11 @@
     <ClCompile Include="양궁대회.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="문자열다루기기본.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="문자열내맘대로 정렬하기.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
