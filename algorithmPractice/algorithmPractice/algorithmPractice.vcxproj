@@ -145,6 +145,7 @@
     <ClCompile Include="실패율.cpp" />
     <ClCompile Include="양궁대회.cpp" />
     <ClCompile Include="없는숫자더하기.cpp" />
+    <ClCompile Include="오픈채팅방.cpp" />
     <ClCompile Include="음양더하기.cpp" />
     <ClCompile Include="정수내림차순.cpp" />
     <ClCompile Include="제일작은수제거하기.cpp" />
