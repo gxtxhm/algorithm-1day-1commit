@@ -137,6 +137,7 @@
     <ClCompile Include="모의고사.cpp" />
     <ClCompile Include="문자열내맘대로 정렬하기.cpp" />
     <ClCompile Include="문자열다루기기본.cpp" />
+    <ClCompile Include="문자열압축.cpp" />
     <ClCompile Include="부족한금액계산하기.cpp" />
     <ClCompile Include="성격유형검사하기.cpp" />
     <ClCompile Include="소스.cpp" />
