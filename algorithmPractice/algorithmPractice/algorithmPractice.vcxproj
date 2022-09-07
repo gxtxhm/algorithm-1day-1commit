@@ -128,6 +128,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="2016년.cpp" />
+    <ClCompile Include="[1차]뉴스 클러스터링.cpp" />
     <ClCompile Include="[1차]다트게임.cpp" />
     <ClCompile Include="[1차]비밀지도cpp.cpp" />
     <ClCompile Include="가운데글자가져오기.cpp" />
