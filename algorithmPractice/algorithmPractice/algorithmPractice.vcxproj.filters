@@ -105,5 +105,14 @@
     <ClCompile Include="[1차]뉴스 클러스터링.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="순위검색.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="순위검색_ver2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="test.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

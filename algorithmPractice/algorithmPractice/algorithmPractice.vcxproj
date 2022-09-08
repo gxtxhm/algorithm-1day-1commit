@@ -128,6 +128,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="2016년.cpp" />
+    <ClCompile Include="test.cpp" />
     <ClCompile Include="[1차]뉴스 클러스터링.cpp" />
     <ClCompile Include="[1차]다트게임.cpp" />
     <ClCompile Include="[1차]비밀지도cpp.cpp" />
@@ -143,6 +144,8 @@
     <ClCompile Include="성격유형검사하기.cpp" />
     <ClCompile Include="소스.cpp" />
     <ClCompile Include="k번째수.cpp" />
+    <ClCompile Include="순위검색.cpp" />
+    <ClCompile Include="순위검색_ver2.cpp" />
     <ClCompile Include="신규아이디추천.cpp" />
     <ClCompile Include="실패율.cpp" />
     <ClCompile Include="양궁대회.cpp" />
