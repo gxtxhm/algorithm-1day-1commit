@@ -133,6 +133,7 @@
     <ClCompile Include="소스만들기.cpp" />
     <ClCompile Include="순위검색_ver4.cpp" />
     <ClCompile Include="위장.cpp" />
+    <ClCompile Include="튜플.cpp" />
     <ClCompile Include="폰켓몬.cpp" />
     <ClCompile Include="test.cpp" />
     <ClCompile Include="[1차]뉴스 클러스터링.cpp" />
