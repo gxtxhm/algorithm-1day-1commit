@@ -128,6 +128,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="2016년.cpp" />
+    <ClCompile Include="k진수에서 소수 개수 구하기.cpp" />
     <ClCompile Include="[1차]캐시.cpp" />
     <ClCompile Include="소수찾기.cpp" />
     <ClCompile Include="소스만들기.cpp" />
