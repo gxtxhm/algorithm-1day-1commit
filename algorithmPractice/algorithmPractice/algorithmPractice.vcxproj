@@ -135,6 +135,7 @@
     <ClCompile Include="수식 최대화.cpp" />
     <ClCompile Include="순위검색_ver4.cpp" />
     <ClCompile Include="위장.cpp" />
+    <ClCompile Include="주차 요금 계산.cpp" />
     <ClCompile Include="튜플.cpp" />
     <ClCompile Include="폰켓몬.cpp" />
     <ClCompile Include="test.cpp" />
