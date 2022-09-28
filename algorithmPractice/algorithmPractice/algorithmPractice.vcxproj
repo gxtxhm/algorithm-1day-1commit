@@ -132,6 +132,7 @@
     <ClCompile Include="[1차]캐시.cpp" />
     <ClCompile Include="[3차]파일명 정렬.cpp" />
     <ClCompile Include="괄호변환.cpp" />
+    <ClCompile Include="메뉴리뉴얼.cpp" />
     <ClCompile Include="소수찾기.cpp" />
     <ClCompile Include="소스만들기.cpp" />
     <ClCompile Include="수식 최대화.cpp" />
