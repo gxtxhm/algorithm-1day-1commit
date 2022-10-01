@@ -131,6 +131,7 @@
     <ClCompile Include="k진수에서 소수 개수 구하기.cpp" />
     <ClCompile Include="[1차]캐시.cpp" />
     <ClCompile Include="[3차]n진수 게임.cpp" />
+    <ClCompile Include="[3차]방금그곡.cpp" />
     <ClCompile Include="[3차]파일명 정렬.cpp" />
     <ClCompile Include="괄호변환.cpp" />
     <ClCompile Include="메뉴리뉴얼.cpp" />
