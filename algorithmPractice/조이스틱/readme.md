@@ -1,9 +1,17 @@
+## 아이디어 
+
+처음에 푼 방식은 중간에 방향을 꺾는 것을 생각하지 않아서 테스트케이스 중 절반은 틀렸다. 구글링을 해보니 수학식으로 문제를 풀었던데 이해가 잘 가지않는다.
+2a*b는 0->i->0->index로 가고, 
+a+2*b는 0->index->0->i로 가는 경로이다.
+
+```cpp
+
 #include <string>
 #include <vector>
 using namespace std;
 
-// �׸���˰����� : �����Ȳ�� ���� �����ظ� ���ϴ� �˰�����.
-// �׸��� ������� �� �����ذ� ���´ٴ� ������ �־����.
+// 그리디알고리즘 : 현재상황에 대한 최적해를 구하는 알고리즘.
+// 그리디를 사용했을 때 최적해가 나온다는 보장이 있어야함.
 
 
 int solution(string name) {
@@ -16,7 +24,7 @@ int solution(string name) {
 
     for(int i=0;i<n;i++)
     {
-        // ���̽�ƽ���� �̵��ϴ� ���� ���� ����
+        // 조이스틱으로 이동하는 수를 먼저 더함
         if (name[i]-'A'<14)
         {
             answer += name[i] - 'A';
@@ -38,8 +46,6 @@ int solution(string name) {
     return answer;
 }
 
-int main()
-{
-    printf("%d",solution("ABAAAAAAAAABB"));
-    return 0;
-}
+
+
+```
