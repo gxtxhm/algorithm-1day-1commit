@@ -137,6 +137,7 @@
     <ClCompile Include="[3차]압축.cpp" />
     <ClCompile Include="[3차]파일명 정렬.cpp" />
     <ClCompile Include="괄호변환.cpp" />
+    <ClCompile Include="괄호회전하기.cpp" />
     <ClCompile Include="두큐합같게만들기.cpp" />
     <ClCompile Include="메뉴리뉴얼.cpp" />
     <ClCompile Include="소수찾기.cpp" />
