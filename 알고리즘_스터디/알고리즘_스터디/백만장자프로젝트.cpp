@@ -1,53 +1,53 @@
-#define _CRT_SECURE_NO_WARNINGS
-#include <iostream>
-#include<vector>
-#include <algorithm>
-
-using namespace std;
-
-
-int main()
-{
-    int T;
-    scanf("%d", &T);
-
-    vector<int>arr;
-
-    for (int i = 0; i < T; i++)
-    {
-        arr.clear();
-        int n;
-        scanf("%d", &n);
-        for (int j = 0; j < n; j++)
-        {
-            int im;
-            scanf("%d", &im);
-            arr.push_back(im);
-        }
-        // arr에서 최대값을 찾아준다.
-        int max = *max_element(arr.begin(), arr.end());
-        int money = 0;
-        int cnt = 0;
-        long long profit = 0;
-        vector<int>::iterator it;
-        for (it=arr.begin();it!=arr.end();it++)
-        {
-            if (*it != max)
-            {
-                cnt++;
-                money += *it;
-            }
-            else
-            {
-                if(cnt>0)profit += (cnt * max - money); 
-                cnt = 0; money = 0;
-                if(it+1!=arr.end())max = *max_element(it + 1, arr.end());
-            }
-        }
-        printf("#%d %lld\n", i + 1, profit);
-    }
-    return 0;
-}
+//#define _CRT_SECURE_NO_WARNINGS
+//#include <iostream>
+//#include<vector>
+//#include <algorithm>
+//
+//using namespace std;
+//
+//
+//int main()
+//{
+//    int T;
+//    scanf("%d", &T);
+//
+//    vector<int>arr;
+//
+//    for (int i = 0; i < T; i++)
+//    {
+//        arr.clear();
+//        int n;
+//        scanf("%d", &n);
+//        for (int j = 0; j < n; j++)
+//        {
+//            int im;
+//            scanf("%d", &im);
+//            arr.push_back(im);
+//        }
+//        // arr에서 최대값을 찾아준다.
+//        int max = *max_element(arr.begin(), arr.end());
+//        int money = 0;
+//        int cnt = 0;
+//        long long profit = 0;
+//        vector<int>::iterator it;
+//        for (it=arr.begin();it!=arr.end();it++)
+//        {
+//            if (*it != max)
+//            {
+//                cnt++;
+//                money += *it;
+//            }
+//            else
+//            {
+//                if(cnt>0)profit += (cnt * max - money); 
+//                cnt = 0; money = 0;
+//                if(it+1!=arr.end())max = *max_element(it + 1, arr.end());
+//            }
+//        }
+//        printf("#%d %lld\n", i + 1, profit);
+//    }
+//    return 0;
+//}
 
 
 

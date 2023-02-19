@@ -24,5 +24,17 @@
     <ClCompile Include="백만장자프로젝트.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="간단한 369게임.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="SWEA_사전문제2번.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="SWEA_사전문제1번.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="가장긴증가하는부분수열.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
