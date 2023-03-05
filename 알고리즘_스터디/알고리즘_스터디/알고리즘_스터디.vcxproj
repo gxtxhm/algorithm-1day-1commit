@@ -142,9 +142,15 @@
     <ClCompile Include="flatten.cpp" />
     <ClCompile Include="SWEA_사전문제1번.cpp" />
     <ClCompile Include="SWEA_사전문제2번.cpp" />
+    <ClCompile Include="가장높은탑쌓기.cpp" />
     <ClCompile Include="간단한 369게임.cpp" />
+    <ClCompile Include="계단오르기.cpp" />
+    <ClCompile Include="네트워크 선 자르기.cpp" />
+    <ClCompile Include="네트워크선자르기 바텀업.cpp" />
     <ClCompile Include="백만장자프로젝트.cpp" />
     <ClCompile Include="가장긴증가하는부분수열.cpp" />
+    <ClCompile Include="병사배치하기.cpp" />
+    <ClCompile Include="상자넣기.cpp" />
     <ClCompile Include="통나무자르기.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
