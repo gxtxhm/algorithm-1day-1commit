@@ -54,5 +54,8 @@
     <ClCompile Include="네트워크선자르기 바텀업.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="LIS.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

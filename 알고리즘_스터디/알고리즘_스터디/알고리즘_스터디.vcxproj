@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="flatten.cpp" />
+    <ClCompile Include="LIS.cpp" />
     <ClCompile Include="SWEA_사전문제1번.cpp" />
     <ClCompile Include="SWEA_사전문제2번.cpp" />
     <ClCompile Include="가장높은탑쌓기.cpp" />
