@@ -57,5 +57,11 @@
     <ClCompile Include="LIS.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="최대선연결하기.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="가높탑쌓.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
