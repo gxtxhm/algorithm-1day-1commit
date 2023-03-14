@@ -145,6 +145,7 @@
     <ClCompile Include="SWEA_사전문제2번.cpp" />
     <ClCompile Include="가높탑쌓.cpp" />
     <ClCompile Include="가장높은탑쌓기.cpp" />
+    <ClCompile Include="가장높은탑쌓기_백준.cpp" />
     <ClCompile Include="간단한 369게임.cpp" />
     <ClCompile Include="계단오르기.cpp" />
     <ClCompile Include="계단오르기2.cpp" />
