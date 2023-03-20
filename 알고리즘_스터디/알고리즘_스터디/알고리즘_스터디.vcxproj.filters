@@ -69,5 +69,8 @@
     <ClCompile Include="가장높은탑쌓기_백준.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="알리바바와40인의 도둑.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
