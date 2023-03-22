@@ -75,5 +75,8 @@
     <ClCompile Include="알리바바와40인의도둑(탑다운).cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="자원캐기.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
