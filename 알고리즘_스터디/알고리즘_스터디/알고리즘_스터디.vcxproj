@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="2진수출력(재귀).cpp" />
     <ClCompile Include="flatten.cpp" />
     <ClCompile Include="LIS.cpp" />
     <ClCompile Include="SWEA_사전문제1번.cpp" />
