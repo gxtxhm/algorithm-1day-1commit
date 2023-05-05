@@ -81,5 +81,8 @@
     <ClCompile Include="2진수출력(재귀).cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="부분집합(DFS).cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
