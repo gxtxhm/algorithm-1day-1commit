@@ -84,5 +84,8 @@
     <ClCompile Include="부분집합(DFS).cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="특정수만들기.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

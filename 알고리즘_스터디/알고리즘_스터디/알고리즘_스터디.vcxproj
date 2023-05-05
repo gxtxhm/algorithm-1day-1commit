@@ -162,6 +162,7 @@
     <ClCompile Include="자원캐기.cpp" />
     <ClCompile Include="최대선연결하기.cpp" />
     <ClCompile Include="통나무자르기.cpp" />
+    <ClCompile Include="특정수만들기.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
